@@ -1,0 +1,5 @@
+C:\Users\Itrejo\Desktop\Chess\ChessEntitys\bin\Debug\ChessEntitys.dll
+C:\Users\Itrejo\Desktop\Chess\ChessEntitys\bin\Debug\ChessEntitys.pdb
+C:\Users\Itrejo\Desktop\Chess\ChessEntitys\obj\Debug\ChessEntitys.csprojResolveAssemblyReference.cache
+C:\Users\Itrejo\Desktop\Chess\ChessEntitys\obj\Debug\ChessEntitys.dll
+C:\Users\Itrejo\Desktop\Chess\ChessEntitys\obj\Debug\ChessEntitys.pdb
