@@ -6,3 +6,4 @@ C:\Users\Itrejo\Desktop\Chess\Chess\obj\Debug\Chess.Properties.Resources.resourc
 C:\Users\Itrejo\Desktop\Chess\Chess\obj\Debug\Chess.csproj.GenerateResource.Cache
 C:\Users\Itrejo\Desktop\Chess\Chess\obj\Debug\Chess.exe
 C:\Users\Itrejo\Desktop\Chess\Chess\obj\Debug\Chess.pdb
+C:\Users\Itrejo\Desktop\Chess\Chess\obj\Debug\Chess.Form1.resources

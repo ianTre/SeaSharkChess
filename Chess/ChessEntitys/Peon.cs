@@ -6,30 +6,33 @@ using System.Threading.Tasks;
 
 namespace ChessEntitys
 {
-    public class Peon
+    public class Peon:Ficha
     {
-        public bool Blanco { get; set; }
+
+        public Peon(Color color , Posicion pos) :  base(color,pos)
+        {
+
+        }
         public bool PrimerMovimiento { get; set; }
         public Posicion PosicionActual { get; set; }
         
-        public bool Movimiento(string nuevaPosicion)
+        override public bool Movimiento(Posicion nuevaPosicion)
         {
-            int posFila;
-            int posColumna;
-            string[] posiciones = nuevaPosicion.Split('-');
-            int.TryParse(posiciones[0],out posFila);
-            int.TryParse(posiciones[1],out posColumna);
-
-            if (posFila != PosicionActual.Fila + 1)
+            if (nuevaPosicion.Fila != PosicionActual.Fila + 1)
                 return false;
 
-            if (posColumna == PosicionActual.Columna)
-                return true;
+            if (nuevaPosicion.Columna != nuevaPosicion.Columna)
+            {
+                if(!PrimerMovimiento)
+                    return false;
+                if (nuevaPosicion.Columna != PosActual.Columna + 1 || nuevaPosicion.Columna != PosActual.Columna - 1)
+                    return false;
+            }   
 
-            if (PrimerMovimiento && (PosicionActual.Columna == posColumna + 1 || PosicionActual.Columna == posColumna - 1))
-                return true;
+            if (nuevaPosicion.Columna > 8 || nuevaPosicion.Fila > 8)
+                return false;
 
-            return false;
+            return true;
         }
 
     }
