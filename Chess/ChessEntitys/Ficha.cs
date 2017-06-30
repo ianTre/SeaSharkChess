@@ -10,16 +10,14 @@ namespace ChessEntitys
     {
         public Posicion PosActual { get; set; }
         public enum Color { Blanco, Negro };
-        private Color color;
+        protected Color color;
+        public int ID;
         public Ficha(Color col,Posicion pos)
         {
             this.PosActual = pos;
             this.color = col;
         }
         public abstract bool Movimiento(Posicion PosNueva);
-        public Color ObtenerColor()
-        {
-            return this.color;
-        }
+        public abstract Color ObtenerColor();
     }
 }

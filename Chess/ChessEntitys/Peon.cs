@@ -10,9 +10,7 @@ namespace ChessEntitys
     {
 
         public Peon(Color color , Posicion pos) :  base(color,pos)
-        {
-
-        }
+        {}
         public bool PrimerMovimiento { get; set; }
         public Posicion PosicionActual { get; set; }
         
@@ -27,13 +25,20 @@ namespace ChessEntitys
                     return false;
                 if (nuevaPosicion.Columna != PosActual.Columna + 1 || nuevaPosicion.Columna != PosActual.Columna - 1)
                     return false;
-            }   
+            }
 
             if (nuevaPosicion.Columna > 8 || nuevaPosicion.Fila > 8)
                 return false;
 
             return true;
         }
+
+        public override Ficha.Color ObtenerColor()
+        {
+            return this.color;
+        }
+
+
 
     }
 }
